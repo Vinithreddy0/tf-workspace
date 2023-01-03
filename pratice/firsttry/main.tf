@@ -42,6 +42,7 @@ resource "google_compute_firewall" "allow-icmp" {
 
 }
 
+
 resource "google_compute_instance" "my-first-vm" {
     name = "vinithfromtf"
     machine_type = "e2-medium"
@@ -75,6 +76,9 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
     sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update
 sudo apt-get install terraform
+mkdir tf-workspace
+cd tf-workspace
+
 
       SCRIPT
     }
