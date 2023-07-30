@@ -7,3 +7,6 @@ variable content1 {
   type        = string
   default     = "I am loving Terraform"
 }
+
+
+
